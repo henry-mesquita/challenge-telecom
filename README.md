@@ -3,7 +3,7 @@
 > Projeto de Análise e ETL de dados para identificar os principais fatores que levam ao cancelamento de clientes (churn) e gerar insights estratégicos para a tomada de decisão.
 
 <br>
-<img width="983" height="568" alt="image" src="https://github.com/user-attachments/assets/b7706be5-c65e-4a15-8fc7-64c7a85d8409" />
+<img width="983" height="568" alt="image" src="https://github.com/user-attachments/assets/c2593361-93a5-4bf7-82d3-e58d03a53bca" />
 
 ---
 
