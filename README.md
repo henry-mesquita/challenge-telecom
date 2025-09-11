@@ -2,6 +2,8 @@
 
 > Projeto de Análise e ETL de dados para identificar os principais fatores que levam ao cancelamento de clientes (churn) e gerar insights estratégicos para a tomada de decisão.
 
+![Gráfico Principal da Análise de Churn](visualizacoes/tipo_contrato.png)
+
 ---
 
 ## Sobre o Projeto
