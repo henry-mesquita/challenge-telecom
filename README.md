@@ -1,61 +1,66 @@
-# Análise de Churn de Clientes
+# Análise de Churn em Empresa de Telecomunicações
 
-Este projeto foi desenvolvido como parte do Challenge de Ciência de Dados da Alura. O objetivo principal é realizar uma análise exploratória para compreender os fatores que levam ao cancelamento de clientes em uma empresa fictícia de telecomunicações.
+> Projeto de Análise e ETL de dados para identificar os principais fatores que levam ao cancelamento de clientes (churn) e gerar insights estratégicos para a tomada de decisão.
 
-## Objetivos
+<br>
+![Gráfico Principal da Análise de Churn](visualizacoes/tipo_contrato.png)
 
-- Aplicar as etapas de um pipeline de dados: extração, transformação, carga e análise.
-- Identificar padrões e variáveis associadas ao churn.
-- Utilizar bibliotecas e ferramentas comuns no ecossistema de dados com Python.
-- Desenvolver visualizações que auxiliem na interpretação dos dados.
+---
 
-## Etapas do Projeto
+## Sobre o Projeto
 
-### 1. Extração
+O churn de clientes é um dos desafios mais críticos para empresas de serviço por assinatura. Este projeto foi desenvolvido para atacar esse problema de frente, realizando uma análise exploratória completa em um dataset de uma empresa de telecomunicações fictícia.
 
-- Importação do conjunto de dados em formato CSV.
-- Leitura inicial e verificação das primeiras amostras.
+O objetivo principal é transformar dados brutos em inteligência de negócio, respondendo à pergunta: **"Quais são os perfis e comportamentos dos clientes que cancelam, e como podemos agir para retê-los?"**
 
-### 2. Transformação
+---
 
-- Tratamento de valores ausentes e inconsistentes.
-- Conversão de colunas para os tipos de dados apropriados.
-- Padronização de nomes e categorias.
+## Principais Descobertas e Insights
 
-### 3. Carga
+A análise revelou padrões claros no comportamento dos clientes com churn. Alguns dos principais achados foram:
 
-- Salvamento do dataset limpo em um novo arquivo CSV para reutilização.
-- Organização do DataFrame final para análise e visualização.
+*   **Contratos Mensais:** Clientes com contratos do tipo "mês a mês" têm uma taxa de churn significativamente maior em comparação com contratos de 1 ou 2 anos.
+*   **Serviços de Suporte:** A ausência de serviços adicionais como suporte técnico e backup online está fortemente correlacionada com o cancelamento.
+*   **Forma de Pagamento:** Clientes que utilizam boleto eletrônico como forma de pagamento apresentam maior propensão ao churn.
+*   *(Opcional: Adicione aqui outro insight interessante que você encontrou!)*
 
-### 4. Análise Exploratória
+---
 
-- Geração de gráficos para investigar a relação entre o churn e variáveis como:
-  - Tipo de contrato
-  - Serviços contratados
-  - Forma de pagamento
-  - Tempo de permanência
-- Comparação de distribuições entre clientes que cancelaram e os que permaneceram.
-- Identificação de padrões relevantes para a área de negócio.
+## Tecnologias Utilizadas
 
-## Ferramentas Utilizadas
+- **Linguagem:** Python
+- **Bibliotecas:** Pandas, Matplotlib, Seaborn
+- **Ambiente:** Jupyter Notebook
 
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
+---
 
-## Organização do Projeto
+## Como Executar
 
-- `notebooks/`: arquivos de análise e limpeza dos dados
-- `dados/`: dataset original
-- `relatorio/`: relatório final do projeto em HTML
-- `visualizacoes/`: imagens e gráficos gerados na análise
+Para replicar a análise, siga os passos abaixo. O projeto está estruturado da seguinte forma:
 
-## Conclusão
+- `notebooks/`: Contém o notebook com todo o processo de análise.
+- `dados/`: Contém o dataset original.
+- `relatorio/`: Contém o relatório final exportado em HTML.
 
-O projeto permitiu explorar práticas de análise de dados e manipulação de datasets reais, fornecendo insights importantes sobre o comportamento dos clientes. As visualizações ajudaram a destacar fatores associados ao churn e a preparar o terreno para futuras análises preditivas.
+```bash
+# 1. Clone o repositório
+git clone https://github.com/henry-mesquita/challenge-telecom.git
+
+# 2. Navegue até o diretório
+cd challenge-telecom
+
+# 3. (Opcional, mas recomendado) Crie e ative um ambiente virtual
+python -m venv venv
+source venv/bin/activate # No Windows: venv\Scripts\activate
+
+# 4. Instale as dependências
+pip install -r requirements.txt
+
+# 5. Inicie o Jupyter Notebook
+jupyter notebook
+```
 
 ## Autor
+Desenvolvido por **Henry Mesquita**.
 
-Desenvolvido por Henry (just fontaine) como parte do programa de formação em Ciência de Dados da Oracle em conjunto com a Alura.
+*Este projeto foi originalmente criado como parte do Challenge de Ciência de Dados da Oracle em conjunto com a Alura.*
